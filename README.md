@@ -2,6 +2,10 @@
 
 A [Docker](https://www.docker.com/)-based installer and runtime for the [Symfony](https://symfony.com) web framework, with full [HTTP/2](https://symfony.com/doc/current/weblink.html) and HTTPS support.
 
+## Before you start
+
+1. Stop any containers you may be running by using `docker-compose down` in any other development projects.
+
 ## Getting Started
 
 1. Run `docker-compose up` (the logs will be displayed in the current shell)
