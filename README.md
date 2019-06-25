@@ -8,9 +8,14 @@ A [Docker](https://www.docker.com/)-based installer and runtime for the [Symfony
 
 ## Getting Started
 
-1. Run `docker-compose up` (the logs will be displayed in the current shell)
-2. Open `https://localhost` in your favorite web browser and [accept the auto-generated TLS certificate](https://stackoverflow.com/a/15076602/1352334)
-3. **Enjoy!**
+1. Run `docker-compose up -d` to start the docker containers as daemons.
+2. Use `docker-compose logs -f` to monitor the logs (in another shell window if you prefer)
+3. Open `https://localhost` in your favorite web browser and [accept the auto-generated TLS certificate](https://stackoverflow.com/a/15076602/1352334)
+4. **Enjoy!**
+
+## Running Composer commands
+
+Use `docker-compose exec app composer [OPTIONS]` to run Composer commands.
 
 ## Selecting a Specific Symfony Version
 
